@@ -15,13 +15,13 @@ function CheckoutProduct({ id, image, title, price, rating }) {
     }
 
     return (
+        <FlipMove>
         <div className='checkoutProduct'>
-            <FlipMove>
             <img className='checkoutProduct_image' src={image} alt="" />
             <div className="checkoutProduct_info">
                 <p className='checkoutProduct_title'>{title}</p>
                 <p className="checkoutProduct_price">
-                    <small>$</small>
+                    <small>₹</small>
                     <strong>{price}</strong>
                 </p>
                 <div className="checkoutProduct_rating">
@@ -29,8 +29,9 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                 </div>
                 <button onClick={removeFromBasket}>Remove From Basket</button>
             </div>
-            </FlipMove>
         </div>
+        </FlipMove>
+        
   )
 }
 

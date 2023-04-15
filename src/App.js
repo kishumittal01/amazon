@@ -8,6 +8,7 @@ import Checkout from './components/Checkout';
 import Login from './components/Login';
 import { auth } from './firebase';
 import { useStateValue } from './components/StateProvider';
+import Payment from './components/Payment';
 
 
 function App() {
@@ -53,6 +54,12 @@ function App() {
               <Checkout />
             </>
             )}
+          />
+          <Route exact path="/payment" element={(
+            <>
+              <Payment />
+            </>
+          )}
           />
           <Route exact path="/" element={(
             <>
