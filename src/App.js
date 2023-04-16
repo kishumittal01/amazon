@@ -57,6 +57,7 @@ function App() {
           />
           <Route exact path="/payment" element={(
             <>
+              <Header />
               <Payment />
             </>
           )}
