@@ -3,7 +3,13 @@
     margin-top: 40px;
     margin-bottom: 40px;
     background-color: solid lightgray;
+    transition: transform .2s;
+    margin-left: 20px;
+}
 
+.checkoutProduct:hover {
+    background: lightgrey;
+    transform: scale(1.2);
 }
 
 .checkoutProduct_info {
@@ -11,12 +17,16 @@
 
 }
 
-.checkoutProduct_info > button {
+.removeBasket {
     background: #f0c14b;
     border: 1px solid;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    border-radius: 24px;
+}
+.removeBasket:hover {
+    background: yellow;
 }
 
 .checkoutProduct_image {

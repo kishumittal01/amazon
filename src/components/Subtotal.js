@@ -27,7 +27,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹"}
       />
-      <button onClick={e => navigate('/payment')}>Proceed to Checkout</button>
+      <button className='checkoutButton' onClick={e => ((basket?.length) ? navigate('/payment') : alert('Your basket is empty! Please add something to your basket'))}>Proceed to Checkout</button>
     </div>
   );
 }

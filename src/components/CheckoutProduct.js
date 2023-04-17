@@ -15,7 +15,9 @@ function CheckoutProduct({ id, image, title, price, rating }) {
     }
 
     return (
-        <FlipMove>
+        <FlipMove duration={750}   easing="ease-out"
+        enterAnimation = "accordianVertical"
+        leaveAnimation = "accordianVertical">  
         <div className='checkoutProduct'>
             <img className='checkoutProduct_image' src={image} alt="" />
             <div className="checkoutProduct_info">
@@ -27,7 +29,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                 <div className="checkoutProduct_rating">
                     {Array(rating).fill().map((_, i) => (<p>🌟</p>))}
                 </div>
-                <button onClick={removeFromBasket}>Remove From Basket</button>
+                <button className='removeBasket' onClick={removeFromBasket}>Remove From Basket</button>
             </div>
         </div>
         </FlipMove>

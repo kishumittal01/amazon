@@ -5,15 +5,22 @@
     justify-content: flex-end;
     margin: 10px;
     padding: 20px;
-    width: 100%;
+    width: 90%;
     max-height: 400px;
     min-width: 100px;
     background-color: white;
     z-index: 1;
+    transition: transform .2s;
+    border-radius: 50px 20px;
+}
+.product:hover {
+    background-color: rgba(205, 252, 249, 0.904);
+    transform: scale(1.1);
 }
 
 .product_rating {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .product > img {
@@ -32,10 +39,15 @@
     margin-bottom: 15px;
 }
 
-.product > button {
+.productButton {
     background: #f0c14b;
     border: 1px solid;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    border-radius: 40px;
+    
+}
+.productButton:hover {
+    background: yellow;
 }
