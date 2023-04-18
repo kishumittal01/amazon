@@ -14,10 +14,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
         })
     }
 
-    return (
-        <FlipMove duration={750}   easing="ease-out"
-        enterAnimation = "accordianVertical"
-        leaveAnimation = "accordianVertical">  
+    return ( 
         <div className='checkoutProduct'>
             <img className='checkoutProduct_image' src={image} alt="" />
             <div className="checkoutProduct_info">
@@ -32,7 +29,6 @@ function CheckoutProduct({ id, image, title, price, rating }) {
                 <button className='removeBasket' onClick={removeFromBasket}>Remove From Basket</button>
             </div>
         </div>
-        </FlipMove>
         
   )
 }
