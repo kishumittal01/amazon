@@ -3,24 +3,24 @@ import './Details.css'
 import { useStateValue } from './StateProvider';
 import DetailsProduct from './DetailsProduct';
 
-function Details() {
+function Details({ id, title, image, price, rating }) {
   
     const [{ basket }, dispatch] = useStateValue();
 
+    
+
     return (
-    <div>
-        <div className="checkout_item">
-              {basket.map(item => (
-                  <DetailsProduct 
-                  id = {item.id}
-                  title = {item.title}
-                  image = {item.image}
-                  price = {item.price}
-                  rating = {item.rating}
-                  />
+        <div className='product'> 
+            {basket.map(item => (
+                    <DetailsProduct
+                    id = {item.id}
+                    title = {item.title}
+                    image = {item.image}
+                    price = {item.price}
+                    rating = {item.rating}
+                    />
               ))}
-            </div>
-    </div>
+        </div>
   )
 }
 
