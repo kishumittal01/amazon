@@ -10,6 +10,7 @@ import { auth } from './firebase';
 import { useStateValue } from './components/StateProvider';
 import Payment from './components/Payment';
 import Details from './components/Details';
+import ErrorPage from './components/ErrorPage';
 
 
 function App() {
@@ -76,8 +77,12 @@ function App() {
             </>
           )} 
           />
-          
-            
+          <Route path="*" element={(
+            <>
+              <ErrorPage />
+            </>
+          )}
+          />
         </Routes>
       </div>
     </Router>
