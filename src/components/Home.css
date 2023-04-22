@@ -6,29 +6,6 @@
     max-width: 1500px;
 }
 
-.home_row1 {
-    display: flex;
-    z-index: 1;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-    margin-bottom: 20px;
-}
-
-.home_row2 {
-    display: flex;
-    z-index: 1;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
-
-.home_row3 {
-    display: flex;
-    z-index: 1;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 .home_image{
     width: 100%;
