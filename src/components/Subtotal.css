@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-    height: 100px;
-    padding: 20px;
+    
+    padding: 10px;
     background-color: #f3f3f3;
     border: 1px solid #dddddd;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .subtotal_gift {
